@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		4AC290D7DAD20EFF5CF246E2 /* Pods_MyFruitDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C8C7821EFBB41C73B6CF23 /* Pods_MyFruitDiary.framework */; };
+		8F4DCDCD22953F0C0085E170 /* FruitsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4DCDCB22953F0C0085E170 /* FruitsListViewController.swift */; };
+		8F4DCDCE22953F0C0085E170 /* FruitsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F4DCDCC22953F0C0085E170 /* FruitsListViewController.xib */; };
+		8F4DCDD122953F330085E170 /* FruitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4DCDCF22953F330085E170 /* FruitCell.swift */; };
+		8F4DCDD222953F330085E170 /* FruitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F4DCDD022953F330085E170 /* FruitCell.xib */; };
+		8F4DCDD5229549B40085E170 /* EntryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4DCDD3229549B40085E170 /* EntryDetailsViewController.swift */; };
+		8F4DCDD6229549B40085E170 /* EntryDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F4DCDD4229549B40085E170 /* EntryDetailsViewController.xib */; };
 		8F8C617D22933B780034DC04 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8C617C22933B780034DC04 /* DataManager.swift */; };
 		8FC3CD22229325F700839536 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC3CD21229325F700839536 /* AppDelegate.swift */; };
 		8FC3CD24229325F700839536 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC3CD23229325F700839536 /* ViewController.swift */; };
@@ -31,6 +37,12 @@
 /* Begin PBXFileReference section */
 		45C8C7821EFBB41C73B6CF23 /* Pods_MyFruitDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFruitDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A4029A7891755014CC36B47 /* Pods-MyFruitDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFruitDiary.debug.xcconfig"; path = "Target Support Files/Pods-MyFruitDiary/Pods-MyFruitDiary.debug.xcconfig"; sourceTree = "<group>"; };
+		8F4DCDCB22953F0C0085E170 /* FruitsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsListViewController.swift; sourceTree = "<group>"; };
+		8F4DCDCC22953F0C0085E170 /* FruitsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitsListViewController.xib; sourceTree = "<group>"; };
+		8F4DCDCF22953F330085E170 /* FruitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCell.swift; sourceTree = "<group>"; };
+		8F4DCDD022953F330085E170 /* FruitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitCell.xib; sourceTree = "<group>"; };
+		8F4DCDD3229549B40085E170 /* EntryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailsViewController.swift; sourceTree = "<group>"; };
+		8F4DCDD4229549B40085E170 /* EntryDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EntryDetailsViewController.xib; sourceTree = "<group>"; };
 		8F8C617C22933B780034DC04 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		8FC3CD1E229325F700839536 /* MyFruitDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFruitDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC3CD21229325F700839536 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +129,10 @@
 				8FC3CD3C22932E8E00839536 /* AboutViewController.xib */,
 				8FC3CD4F229335A000839536 /* LoadingFruitViewController.swift */,
 				8FC3CD50229335A000839536 /* LoadingFruitViewController.xib */,
+				8F4DCDCB22953F0C0085E170 /* FruitsListViewController.swift */,
+				8F4DCDCC22953F0C0085E170 /* FruitsListViewController.xib */,
+				8F4DCDD3229549B40085E170 /* EntryDetailsViewController.swift */,
+				8F4DCDD4229549B40085E170 /* EntryDetailsViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -137,6 +153,8 @@
 			children = (
 				8FC3CD40229330EC00839536 /* EntryCell.swift */,
 				8FC3CD41229330EC00839536 /* EntryCell.xib */,
+				8F4DCDCF22953F330085E170 /* FruitCell.swift */,
+				8F4DCDD022953F330085E170 /* FruitCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -224,6 +242,9 @@
 				8FC3CD29229325F800839536 /* Assets.xcassets in Resources */,
 				8FC3CD3E22932E8E00839536 /* AboutViewController.xib in Resources */,
 				8FC3CD37229329D200839536 /* EntriesViewController.xib in Resources */,
+				8F4DCDCE22953F0C0085E170 /* FruitsListViewController.xib in Resources */,
+				8F4DCDD6229549B40085E170 /* EntryDetailsViewController.xib in Resources */,
+				8F4DCDD222953F330085E170 /* FruitCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,8 +309,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FC3CD45229331A200839536 /* APIHandler.swift in Sources */,
+				8F4DCDD122953F330085E170 /* FruitCell.swift in Sources */,
 				8FC3CD24229325F700839536 /* ViewController.swift in Sources */,
 				8FC3CD22229325F700839536 /* AppDelegate.swift in Sources */,
+				8F4DCDD5229549B40085E170 /* EntryDetailsViewController.swift in Sources */,
+				8F4DCDCD22953F0C0085E170 /* FruitsListViewController.swift in Sources */,
 				8FC3CD36229329D200839536 /* EntriesViewController.swift in Sources */,
 				8FC3CD51229335A000839536 /* LoadingFruitViewController.swift in Sources */,
 				8FC3CD3D22932E8E00839536 /* AboutViewController.swift in Sources */,

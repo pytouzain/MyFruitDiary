@@ -10,15 +10,14 @@ import UIKit
 
 class EntryCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var totalOfFruitsLabel: UILabel!
+    @IBOutlet weak var amountOfVitaminsLabel: UILabel!
+    
+    func configure(withEntry entry: Entry) {
+        dateLabel.text = entry.date
+        totalOfFruitsLabel.text = "\(entry.totalAmountOfFruits()) fruits eaten"
+        amountOfVitaminsLabel.text = "\(entry.totalAmountOfVitamins()) vitamins"
     }
     
 }

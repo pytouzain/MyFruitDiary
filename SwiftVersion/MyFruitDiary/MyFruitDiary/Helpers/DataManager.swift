@@ -11,4 +11,8 @@ import Foundation
 class DataManager {
     static let shared = DataManager()
     var fruits: [Fruit] = []
+    
+    func getFruit(forId id: Int) -> Fruit? {
+        return fruits.filter { $0.id == id }.first
+    }
 }

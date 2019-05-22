@@ -15,6 +15,15 @@ class Navigation {
     
     weak var window: UIWindow!
     
+    private var entriesNavigationController: UINavigationController? {
+        let tabBarController = window.rootViewController as? UITabBarController
+        guard tabBarController?.viewControllers?.isEmpty == false else {
+            print("[Error]: No items founded in tabBarController.viewControllers")
+            return nil
+        }
+        return tabBarController?.viewControllers?[0] as? UINavigationController
+    }
+    
     func presentTabBarController() {
         let tabBarController = UITabBarController()
         
@@ -33,5 +42,10 @@ class Navigation {
     func presentLoadingFruits() {
         let loadingFruitViewController = LoadingFruitViewController()
         window.rootViewController = loadingFruitViewController
+    }
+    
+    func presentFruitsList() {
+        let fruitsListViewController = FruitsListViewController()
+        entriesNavigationController?.pushViewController(fruitsListViewController, animated: true)
     }
 }
